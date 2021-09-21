@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	import java.util.Random;
+        import java.util.Random;
 
         public class Main {
             public static void main(String[] args) {
@@ -29,6 +29,18 @@ public class Main {
             }
 
             public static void insertionSort(int[] arr) {
+                    int n = arr.length;
+                    for (int i = 1; i < n; ++i) {
+                        int numToPlace = arr[i];
+                        int j = i - 1;
+                        while (j >= 0 && arr[j] > numToPlace) {
+                            arr[j + 1] = arr[j];
+                            j = j - 1;
+                        }
+                        arr[j + 1] = numToPlace;
+                    }
+                }
+
             }
 
             public static void bubbleSort(int[] arr) {
